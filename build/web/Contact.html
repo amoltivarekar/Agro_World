@@ -1,0 +1,163 @@
+<html>
+<head>
+<title>Contact Us Page</title>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+<!-- Custom Theme files -->
+<!--theme-style-->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	
+<!--//theme-style-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Agro World  Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android  Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!---->
+<script src="js/jquery.chocolat.js"></script>
+		<link rel="stylesheet" href="css/chocolat.css" type="text/css" media="screen" charset="utf-8">
+		<!--light-box-files -->
+		<script type="text/javascript" charset="utf-8">
+		$(function() {
+			$('.gallery-grids a').Chocolat();
+		});
+		</script>
+<!--moving-->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+        jQuery(document).ready(function($) {
+                $(".scroll").click(function(event){		
+                        event.preventDefault();
+                        $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+                });
+        });
+</script>
+<script>
+
+function validateFm(evt)
+{
+    var charCode = (evt.which) ? evt.which : event.keyCode
+    if (charCode < 47 || charCode > 58)
+    {
+    }
+    else
+    {
+        alert("You cannot insert numeric values");
+        return false;
+    }   
+}
+function validatephno(evt)
+{
+    var charCode = (evt.which) ? evt.which : event.keyCode
+    if (charCode < 47 || charCode > 58)
+    {
+        alert("You cannot insert any Alphabetic character ");
+        return false;
+    }      
+}
+</script>
+
+</head>
+<body>
+<!--header-->
+<div class="header">
+	<div class="container">
+		<div class="logo">
+		<h1><a href="index.html">
+			Agro World
+		</a></h1>
+		</div>
+		<div class="top-nav">
+			<span class="menu"><img src="images/menu.png" alt=""> </span>
+				<ul>
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="User.html" >User</a></li>
+					<li><a href="gallery.html">Gallery</a></li>
+					<li><a href="About.html">About</a></li>
+					<li class="active"><a href="Contact.html">Contact</a></li>
+				</ul>
+						<!--script-->
+					<script>
+						$("span.menu").click(function(){
+							$(".top-nav ul").slideToggle(500, function(){
+							});
+						});
+                                        </script>				
+		</div>
+		
+	</div>
+<!---->
+	<div class="contact" id="contact">
+		<div class="container">
+			<div class="contact-top">
+				<h3>Contact</h3>
+				<label></label>
+				<p>Thank you for visiting This Agro world site. This site show the result of related Agriculture information, like different types of food, agriculture tools,equipment and pesticides.  </p>
+
+			</div>
+			<div class="col-md-8 contact-form">
+				<form action="feedback" method="post">
+                                    <input type="text" placeholder="Name" name="fdkname" onkeypress="return validateFm(event)" required>
+                                    <input type="email" placeholder="E-mail" name="fdkEmail" required>
+                                    <input type="text" placeholder="Phone" name="fdkPhone" onkeypress="return validatephno(event)" required>
+                                    <textarea placeholder="Message" name="feedback" required></textarea>
+                                    <input type="submit" value="SEND">
+						</form>
+				
+			</div>
+			<div class="col-md-4 contact-para">
+				<p>I am T.Y.BSc(IT) Student,studing in KES college (Khar west).This web application is my Final Year Project </p>
+				<div class="address-more">
+						<h4>Address</h4>
+							<p><b>Agro World</b></p>
+							<p>Ashish Shrivastav</p>
+							<p>santacruz (west)</p>
+						</div>
+						<div class="address-more">	
+			</div>
+		</div>
+	</div>
+<!--footer-->
+<div class="footer">
+	<div class="container">
+		<div class="footer-bottom">
+			<div class="col-sm-8 footer-menu">
+				<ul>
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="User.html" >User</a></li>
+					<li><a href="gallery.html">Gallery</a></li>
+					<li><a href="About.html">About</a></li>
+					<li><a href="Contact.html">Contact</a></li>
+				</ul>
+				 </div>
+		<div class="col-sm-4 footer-top1">
+			<ul class="social">
+                            <li><a href="https://www.facebook.com/login/"><i> </i></a></li>
+                            <li><a href="https://twitter.com/login"><i class="twitter"> </i></a></li>						
+                            <li><a href="https://www.instagram.com/accounts/login/"><i class="linked"> </i></a></li>
+                            <li><a href="https://dribbble.com/session/new"><i class="dribble"> </i></a></li>
+			</ul>
+		</div>
+		<div class="clearfix"> </div>
+		</div>		
+	</div>
+	<script type="text/javascript">
+            $(document).ready(function() {
+                    /*
+                    var defaults = {
+                            containerID: 'toTop', // fading element id
+                            containerHoverID: 'toTopHover', // fading element hover id
+                            scrollSpeed: 1200,
+                            easingType: 'linear' 
+                    };
+                    */
+
+                    $().UItoTop({ easingType: 'easeOutQuart' });
+
+            });
+	</script>
+	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+</div>
+</body>
+</html>
